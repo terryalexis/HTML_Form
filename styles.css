@@ -6,7 +6,6 @@
 body {
     background-color: white;
     background-color: rgba(249, 177, 44, 10%);
-    /* background: linear-gradient(45deg, #3f4149, #606268, #9b9ca1, #606268, #3f4149); #1F26418 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,8 +14,6 @@ body {
 }
 
 .btn-primary {
-    /* background-color: rgb(28, 28, 152); */
-    /* color: white; */
     background-color: rgb(249, 177, 44);
     color: black;
     border-radius: 5px;
@@ -72,12 +69,10 @@ footer {
 footer * {
     color: gray;
     font-size: 12px;
-    /* text-decoration: none; */
 }
 
 input[type=text],
 input[type=number] {
-    /* width: 100%; */
     margin: 0 0.5rem;
     padding: 0.75rem;
     border: 1px solid gray;
@@ -105,6 +100,15 @@ label, legend {
     margin: 1.5rem 0;
     height: auto;
     width: 100%;
+}
+
+.error {
+    color: red;
+    font-size: 0.75rem;
+    height: 0.75rem;
+    padding: 0 1rem;
+    width: 100%;
+    text-align: left;
 }
 
 .w-15 {

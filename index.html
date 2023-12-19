@@ -14,16 +14,17 @@
                 <h2 class="m-0">Dog Registration</h2>
             </div>
             <div class="container-content">
-            <!-- Section for Dog info and Owner info? -->
                 <form id="dog-registration-form" action="register.php" method="POST">
                     <div class="row">
                         <div class="col">
-                            <label for="dog-name">Dog's Name</label>
-                            <input id="dog-name" name="dog-name" type="text" pattern="^[A-Za-z\s]+$" minlength="1" maxlength="50" placeholder="Dog's Name" required>
+                            <label for="dog-name">Dog's Name *</label>
+                            <input id="dog-name" name="dog-name" type="text" maxlength="50" placeholder="Dog's Name" required>
+                            <span class="error" id="dog-name-err"></span>
                         </div>
                         <div class="col">
-                            <label for="breed">Breed</label>
-                            <input id="breed" name="breed" type="text" maxlength="50" placeholder="Breed" required>
+                            <label for="breed">Breed *</label>
+                            <input id="breed" name="breed" type="text" minlength="2" maxlength="50" placeholder="Breed" required>
+                            <span class="error" id="breed-err"></span>
                         </div>
                     </div>
                     <div class="row">
@@ -39,10 +40,12 @@
                                     Female
                                 </label>
                             </div>
+                            <span class="error" id="gender-err"></span>
                         </div>
                         <div class="col">
                             <label for="microchip-number">Microchip #</label>
-                            <input id="microchip-number" name="microchip-number" type="text" placeholder="Microchip #">
+                            <input id="microchip-number" name="microchip-number" type="number" placeholder="Microchip #">
+                            <span class="error" id="microchip-num-err"></span>
                         </div>
                     </div>
                     <input id="register-dog" type="submit" value="Register" class="btn-primary w-15">
@@ -54,7 +57,6 @@
         </footer>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
             crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>    
         <script type="text/javascript" src="registration_form.js"></script>
     </body>
 </html>
