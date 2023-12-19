@@ -1,28 +1,97 @@
-body {
+* {
+    box-sizing: border-box;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.border-gray {
-    border-radius: 5px;
-    border: 2px solid slategrey;
+body {
+    /* background-color: white; */
+    background: linear-gradient(45deg, #3f4149, #606268, #9b9ca1, #606268, #3f4149); /*#1F26418*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .btn-primary {
-    background-color: rgb(15, 15, 90);
-    border-radius: 3px;
+    background-color: rgb(28, 28, 152);
+    border-radius: 5px;
+    border: none;
     color: white;
-    padding: 0.5rem;
+    padding: 0.75rem;
     font-size: 1rem;
     margin: 1rem;
 }
 
-.container {
-    margin: auto;
-    width: 50rem;
-    padding: 0.5rem;
-    /* box-shadow: 5px 5px 20px gray; */
+.btn-primary:hover {
+    cursor: pointer;
+    background-color: rgb(38, 38, 196);
 }
 
-.text-centered {
-    text-align: center;
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container {
+    background-color: white;
+    width: 40rem;
+    max-width: 800px;
+    box-shadow: 1px 1px 10px rgb(40, 40, 40);
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container-content {
+    background-color: white;
+    padding: 0.5rem 1rem;
+}
+
+.container-header {
+    background-color: rgb(249, 177, 44);
+    color: black;
+    height: 4rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+input[type=text],
+input[type=number] {
+    /* width: 100%; */
+    margin: 0 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type=radio] {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    text-align: left;
+    padding: 0.5rem 1rem;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0;
+    height: auto;
+    width: 100%;
+}
+
+.w-15 {
+    width: 15rem;
 }
