@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Dog Registration</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -16,28 +15,34 @@
             </div>
             <div class="container-content">
             <!-- Section for Dog info and Owner info? -->
-                <form method="POST">
+                <form id="dog-registration-form" action="register.php" method="POST">
                     <div class="row">
                         <div class="col">
                             <label for="dog-name">Dog's Name</label>
-                            <input id="dog-name" name="dog-name" type="text" pattern="^[A-Za-z\s]+$" maxlength="50" placeholder="Dog's Name">
+                            <input id="dog-name" name="dog-name" type="text" pattern="^[A-Za-z\s]+$" minlength="1" maxlength="50" placeholder="Dog's Name" required>
                         </div>
                         <div class="col">
                             <label for="breed">Breed</label>
-                            <input id="breed" name="breed" type="text" maxlength="50" placeholder="Breed">
+                            <input id="breed" name="breed" type="text" maxlength="50" placeholder="Breed" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <label for="gender">Gender</label>
+                            <legend>Gender</legend>
                             <div>
-                                <input id="male" name="gender" type="radio" value="male" checked>Male</input>
-                                <input id="female" name="gender" type="radio" value="female">Female</input>
+                                <label for="male">
+                                    <input id="male" name="gender" type="radio" value="male" checked>
+                                    Male
+                                </label>
+                                <label for="female">
+                                    <input id="female" name="gender" type="radio" value="female">
+                                    Female
+                                </label>
                             </div>
                         </div>
                         <div class="col">
-                            <label for="microchip_number">Microchip #</label>
-                            <input name="microchip_number" type="text" placeholder="Microchip #">
+                            <label for="microchip-number">Microchip #</label>
+                            <input id="microchip-number" name="microchip-number" type="text" placeholder="Microchip #">
                         </div>
                     </div>
                     <input id="register-dog" type="submit" value="Register" class="btn-primary w-15">
@@ -49,6 +54,7 @@
         </footer>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
             crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>    
         <script type="text/javascript" src="registration_form.js"></script>
     </body>
 </html>
