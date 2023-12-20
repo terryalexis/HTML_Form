@@ -3,6 +3,14 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.alert {
+    background-color: rgba(54, 139, 250, 0.4);
+    border-radius: 5px;
+    border: 1px solid rgba(54, 139, 250);
+    padding: 1rem 0.5rem;
+    font-size: 0.9rem;
+}
+
 body {
     background-color: white;
     background-color: rgba(249, 177, 44, 10%);
@@ -62,8 +70,17 @@ body {
     flex-direction: row;
 }
 
+.error {
+    color: red;
+    font-size: 0.75rem;
+    height: 0.75rem;
+    padding: 0 1rem;
+    width: 100%;
+    text-align: left;
+}
+
 footer {
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 footer * {
@@ -94,6 +111,10 @@ label, legend {
     margin: 0;
 }
 
+.muted {
+    font-weight: 70;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -102,15 +123,10 @@ label, legend {
     width: 100%;
 }
 
-.error {
-    color: red;
-    font-size: 0.75rem;
-    height: 0.75rem;
-    padding: 0 1rem;
-    width: 100%;
-    text-align: left;
-}
-
 .w-15 {
     width: 15rem;
+}
+
+.m-5 {
+    margin: 5rem;
 }

@@ -14,16 +14,17 @@
                 <h2 class="m-0">Dog Registration</h2>
             </div>
             <div class="container-content">
+                <div class="alert" hidden>Error Registering. Please double-check all fields and submit again.</div>
                 <form id="dog-registration-form" action="register.php" method="POST">
                     <div class="row">
                         <div class="col">
                             <label for="dog-name">Dog's Name *</label>
-                            <input id="dog-name" name="dog-name" type="text" maxlength="50" placeholder="Dog's Name" required>
+                            <input id="dog-name" name="dog-name" type="text" maxlength="50" placeholder="Dog's Name">
                             <span class="error" id="dog-name-err"></span>
                         </div>
                         <div class="col">
                             <label for="breed">Breed *</label>
-                            <input id="breed" name="breed" type="text" minlength="2" maxlength="50" placeholder="Breed" required>
+                            <input id="breed" name="breed" type="text" minlength="2" maxlength="50" placeholder="Breed">
                             <span class="error" id="breed-err"></span>
                         </div>
                     </div>
@@ -43,7 +44,7 @@
                             <span class="error" id="gender-err"></span>
                         </div>
                         <div class="col">
-                            <label for="microchip-number">Microchip #</label>
+                            <label for="microchip-number">Microchip # (9-15 digits)</label>
                             <input id="microchip-number" name="microchip-number" type="number" placeholder="Microchip #">
                             <span class="error" id="microchip-num-err"></span>
                         </div>
