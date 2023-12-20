@@ -14,18 +14,17 @@
                 <h2 class="m-0">Dog Registration</h2>
             </div>
             <div class="container-content">
-                <div class="alert" hidden>Error Registering. Please double-check all fields and submit again.</div>
-                <form id="dog-registration-form" action="register.php" method="POST">
+                <form id="dog_registration_form" action="register.php" method="POST">
                     <div class="row">
                         <div class="col">
-                            <label for="dog-name">Dog's Name *</label>
-                            <input id="dog-name" name="dog-name" type="text" maxlength="50" placeholder="Dog's Name">
-                            <span class="error" id="dog-name-err"></span>
+                            <label for="dog_name">Dog Name *</label>
+                            <input id="dog_name" name="dog_name" type="text" maxlength="50" placeholder="Dog Name">
+                            <span class="error" id="dog_name_error"></span>
                         </div>
                         <div class="col">
                             <label for="breed">Breed *</label>
                             <input id="breed" name="breed" type="text" minlength="2" maxlength="50" placeholder="Breed">
-                            <span class="error" id="breed-err"></span>
+                            <span class="error" id="breed_error"></span>
                         </div>
                     </div>
                     <div class="row">
@@ -41,15 +40,15 @@
                                     Female
                                 </label>
                             </div>
-                            <span class="error" id="gender-err"></span>
+                            <span class="error" id="gender_error"></span>
                         </div>
                         <div class="col">
-                            <label for="microchip-number">Microchip # (9-15 digits)</label>
-                            <input id="microchip-number" name="microchip-number" type="number" placeholder="Microchip #">
-                            <span class="error" id="microchip-num-err"></span>
+                            <label for="microchip_number">Microchip # (9-15 digits)</label>
+                            <input id="microchip_number" name="microchip_number" type="number" placeholder="Microchip #">
+                            <span class="error" id="microchip_number_error"></span>
                         </div>
                     </div>
-                    <input id="register-dog" type="submit" value="Register" class="btn-primary w-15">
+                    <input id="register_dog" type="submit" value="Register" class="btn-primary w-15">
                 </form>
             </div>
         </div>
