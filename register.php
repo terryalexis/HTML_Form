@@ -20,7 +20,7 @@ function register() {
         }
 
         $response = [];
-        
+
         if(empty($errors)) {
             $sql_query = "INSERT INTO Dogs (dog_name, breed, gender, microchip_number) 
                 VALUES ('$dog_details[dog_name]', '$dog_details[breed]', '$dog_details[gender]', $dog_details[microchip_number]);";
@@ -36,52 +36,6 @@ function register() {
 
         echo(json_encode($response));
     }
-
-    // // Dog Name Validation
-    // $dog_name = '';
-    // $dog_name_err = '';
-    // if(empty($_POST['dog_name'])) {
-    //     $dog_name_err = 'Dog name is required';
-    //     throw new Exception("Dog name is required");
-    // } else {
-    //     $dog_name = trim($_POST['dog_name']);
-    // }
-
-    // // Breed Validation
-    // $breed = '';
-    // $breed_err = '';
-    // if(empty($_POST['breed'])){
-    //     $breed_err = 'Breed is required';
-    //     $isValid = false;
-    // } else {
-    //     $breed = trim($_POST['breed']);
-    // }
-
-    // // Gender Validation
-    // $gender = '';
-    // $gender_err = '';
-    // if(empty($_POST['gender'])) {
-    //     $gender_err = 'Gender is required';
-    //     $isValid = false;
-    // } else {
-    //     $gender = trim($_POST['gender']);
-    // }
-
-    // // Microchip # Validation
-    // $microchip_num = '';
-    // $microchip_num_err = '';
-    // if(empty($_POST['microchip_number'])) {
-    //     $microchip_num_err = null;
-    // } else {
-    //     $microchip_number = $_POST['microchip_number'];
-    // }
-
-
-    // if ($isValid) {
-    //     echo(connectToDatabase($sql_query));
-    // } else {
-    //     echo(false);
-    // }
 }
 
 
